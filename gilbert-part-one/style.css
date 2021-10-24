@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+header {
+    background-image: url("/gilbert-part-one/assets/ccc.svg");
+    background-repeat: no-repeat;
+    background-size: 130px;
+    background-position-x: left;
+    height: 60px;
+}
+
+nav {
+    float: right;
+    margin-top: 10px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: inline;
+}
+
+body {
+    font-family: Bungee, sans-serif;
+}
+
+a {
+    color: #7944e6;
+    padding: 13px;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #10fdff;
+}
+
+.flex-container-about {
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+    padding-left: 8px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+    margin-right: 8px;
+}
+
+.food-truck {
+    display: flex;
+    justify-content: center;
+    background-color: #ff00ff;
+    width: 98%;
+    padding: 25px;
+    margin-left: auto;
+    margin-right: auto;  
+}
+
+.about {
+    text-align: left;
+    background-color: #ff00ff;
+    width: 98%;
+    padding: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flex-container-menus {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-container-menus > div.menus {
+    border: #7944e6 3px solid;
+    background-color: white;
+    text-align: center;
+    padding: 15px;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+[class*="col+"] {
+    width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+    .flex-container-about {flex-direction: row;}
+    .flex-container-menus {flex-direction: row;}
+    .about {flex-direction: row; width: 50%; float: right;}
+    .food-truck {flex-direction: row; width: 50%; float: left;}
+    .menus {flex-direction: row; float: left;}
+}
